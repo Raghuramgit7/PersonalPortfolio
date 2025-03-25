@@ -1,0 +1,64 @@
+
+# Personal Portfolio Website Requirements
+
+## Functional Requirements
+
+1. Portfolio Sections
+   - About section with personal introduction and skills
+   - Experience section displaying work history and education
+   - Projects showcase
+   - Contact form functionality
+   - Resume/CV access
+
+2. Interactive Features
+   - AI-powered chatbot for website navigation
+   - Contact form with database storage
+   - Downloadable resume
+   - Interactive skills display
+
+3. User Interface
+   - Responsive design for all devices
+   - Modern, clean aesthetic using Tailwind CSS
+   - Animated transitions and loading states
+   - Custom UI components using Radix UI
+
+## Technical Requirements
+
+1. Frontend
+   - React 18
+   - TypeScript
+   - Tailwind CSS
+   - Radix UI components
+   - React Query for data fetching
+   - React Hook Form for form handling
+
+2. Backend
+   - Express.js with TypeScript
+   - PostgreSQL database with Drizzle ORM
+   - Session-based authentication using Passport.js
+   - RESTful API endpoints
+   - WebSocket support
+
+3. Build & Development
+   - Vite for development and production builds
+   - TypeScript compilation and checking
+   - Server-side rendering capability
+   - Hot module replacement
+
+4. Security
+   - Session management
+   - Form validation and sanitization
+   - Secure database connections
+   - Protected API endpoints
+
+5. Performance
+   - Optimized asset loading
+   - Efficient database queries
+   - Responsive UI without lag
+   - Fast page load times
+
+## Deployment Requirements
+   - Production-ready build configuration
+   - Environment variable management
+   - Database migration support
+   - Error logging and monitoring
