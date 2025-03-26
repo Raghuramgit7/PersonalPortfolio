@@ -5,9 +5,12 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # ✅ required to push to gh-pages branch
+
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # ✅ this is required
 
     steps:
       - name: Checkout code
@@ -24,10 +27,12 @@ jobs:
       - name: Build the app
         run: npm run build
 
-      - name: Deploy to GitHub Pages 🚀
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          publish_branch: gh-pages
           user_name: Raghuram Gudemaranahalli
           user_email: raghuram0311@gmail.com
+          force_orphan: true  # ✅ force push with no history
